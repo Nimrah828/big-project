@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details - DooKa</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Is tarah apne HTML mein button/link ka code update karein -->
+<a href="signup.html" class="btn">Sign Up</a>
+
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Doo<span>Ka</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                <li class="active"><a href="#"><i class="fa-solid fa-users"></i> Employee <i
+                            class="fa-solid fa-chevron-down dropdown-icon"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-calendar-check"></i> Attendance</a></li>
+                <li><a href="#"><i class="fa-solid fa-wallet"></i> Payroll</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-line"></i> Working Tracker</a></li>
+                <li><a href="#"><i class="fa-regular fa-bell"></i> Notifications</a></li>
+            </ul>
+            <ul class="nav-links bottom-nav">
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i> Help & Support</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Top Bar -->
+            <header class="top-header">
+                <div class="back-link">
+                    <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+                </div>
+                <div class="header-right">
+                    <div class="icon-badge"><i class="fa-regular fa-envelope"></i><span>8</span></div>
+                    <div class="icon-badge"><i class="fa-regular fa-bell"></i><span>5</span></div>
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+                        <div class="profile-info">
+                            <h4>Sofikul Khan</h4>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Employee Banner Profile -->
+            <section class="emp-profile-card">
+                <div class="emp-avatar-wrapper">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Sofikul Khan">
+                    <span class="status-dot active"></span>
+                </div>
+                <div class="emp-main-info">
+                    <h2>Sofikul Khan <span class="status-badge permanent">Permanent</span></h2>
+                    <p class="role-text">Manager — Human Resources</p>
+                    <p class="location-text"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
+                </div>
+                <div class="emp-action-btns">
+                    <button class="btn-secondary"><i class="fa-regular fa-envelope"></i> Message</button>
+                    <button class="btn-primary"><i class="fa-solid fa-pen"></i> Edit Profile</button>
+                </div>
+            </section>
+
+            <!-- Grid Details Section -->
+            <section class="emp-details-grid">
+
+                <!-- Left Column: Personal & Job Info -->
+                <div class="details-left">
+
+                    <!-- Personal Info Card -->
+                    <div class="card detail-card">
+                        <h3>Personal Information</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="label">Full Name</span>
+                                <span class="value">Sofikul Khan</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email Address</span>
+                                <span class="value">sofikul.khan@dooka.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Phone Number</span>
+                                <span class="value">+92 300 1234567</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Date of Birth</span>
+                                <span class="value">14 Aug 1995</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Gender</span>
+                                <span class="value">Male</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Info Card -->
+                    <div class="card detail-card">
+                        <h3>Employment Details</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="label">Employee ID</span>
+                                <span class="value">#EMP-2024-08</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Department</span>
+                                <span class="value">Human Resources</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Joining Date</span>
+                                <span class="value">10 Jan 2022</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Work Shift</span>
+                                <span class="value">Morning (09:00 AM - 06:00 PM)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Salary</span>
+                                <span class="value">$45,000 / year</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Performance & Attendance History -->
+                <div class="details-right">
+
+                    <!-- Performance Chart Card -->
+                    <div class="card detail-card">
+                        <h3>Monthly Performance Score</h3>
+                        <div class="chart-box">
+                            <canvas id="empPerformanceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity / Attendance Log -->
+                    <div class="card detail-card">
+                        <h3>Recent Attendance Log</h3>
+                        <div class="table-responsive">
+                            <table class="simple-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Check In</th>
+                                        <th>Check Out</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>06 Sep 2026</td>
+                                        <td>08:55 AM</td>
+                                        <td>06:05 PM</td>
+                                        <td><span class="status-text green">On Time</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>05 Sep 2026</td>
+                                        <td>09:15 AM</td>
+                                        <td>06:00 PM</td>
+                                        <td><span class="status-text yellow">Late</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04 Sep 2026</td>
+                                        <td>08:50 AM</td>
+                                        <td>06:10 PM</td>
+                                        <td><span class="status-text green">On Time</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03 Sep 2026</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td><span class="status-text red">Leave</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JS Script -->
+   <script src="emp-details.js"></script>
+</body>
+
+</html>
